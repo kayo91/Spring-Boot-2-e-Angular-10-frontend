@@ -27,7 +27,9 @@ export class CategoriaCreateComponent implements OnInit {
     }, err => { // err simboliza o erro
       for(let i = 0; i < err.error.errors.lenght; i++) {
         this.service.mensagem(err.error.errors[i].menssage)
-      } // falta arrumar o metodo para retornar a mensagem de erro da api
+      } 
+      // falta arrumar o metodo para retornar a mensagem de erro da api
+      // this.service.mensagem(err.error.errors.menssage)
     })
   }
 
